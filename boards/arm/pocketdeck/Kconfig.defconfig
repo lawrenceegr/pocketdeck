@@ -1,0 +1,6 @@
+if BOARD_POCKETDECK
+
+config ZMK_KEYBOARD_NAME
+	default "PocketDeck"
+
+endif

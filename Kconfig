@@ -1,0 +1,13 @@
+config ZMK_BEHAVIOR_BUZZER
+	bool "Buzzer behavior"
+	default y
+	depends on DT_HAS_ZMK_BEHAVIOR_BUZZER_ENABLED
+	select PWM
+if ZMK_BEHAVIOR_BUZZER
+
+config ZMK_BEHAVIOR_BUZZER_INIT_PRIORITY
+	int "Buzzer behavior initialization priority"
+	default 90
+	range 0 99
+
+endif

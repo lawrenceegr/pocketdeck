@@ -1,0 +1,13 @@
+description: Buzzer behavior driven by a PWM channel
+
+compatible: "zmk,behavior-buzzer"
+
+include: one_param.yaml
+
+properties:
+  pwms:
+    type: phandle-array
+    required: true
+  duration-ms:
+    type: int
+    default: 40

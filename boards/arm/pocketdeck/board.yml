@@ -1,0 +1,5 @@
+board:
+  name: pocketdeck
+  vendor: zmk
+  socs:
+    - name: nrf52840
